@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$tt: uppercase;
+$titleColor: #314a5b;
+$titleWeight: bold;
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url('../img/bg-img.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 1057px;
+  background-size: cover;
+  //position: relative;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  max-width: 970px;
+  min-width: 320px;
+  padding: 0 15px 0;
+  margin: 0 auto;
+
+  &_logo {
+    height: 75px;
+    min-width: 140px;
+
+    > a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background-color: #fa5c65;
+      font-size: 20px;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 15px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  &_menu {
+    display: flex;
+
+    &_item {
+      align-content: space-around;
+      text-transform: $tt;
+      list-style: none;
+      margin-right: 15px;
+    }
+
+    &_link {
+      justify-content: space-around;
+      padding: 5px 10px;
+      color: $titleColor;
+      font-weight: $titleWeight;
+
+    }
+  }
+}
+
+.header_center {
+
+  &_content {
+    max-width: 555px;
+    padding-top: 250px;
+    //display: flex;
+    align-items: center;
+    //position: absolute;
+    top: 75px;
+
+    &_title {
+      text-transform: $tt;
+      color: $titleColor;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    &_text {
+      color: $titleColor;
+      font-size: 20px;
+    }
+
+    &_link {
+      display: flex;
+      text-transform: $tt;
+      background-color: #fa5c65;
+      border-radius: 10px;
+      border: none;
+
+      > a {
+        display: flex;
+        font-size: 20px;
+        padding-bottom: 15px;
+        color: #fff;
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+
+    }
+  }
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.info_item {
+  padding-left: 40px;
+
+  &_title {
+    text-transform: $tt;
+    color: $titleColor;
+    font-weight: $titleWeight;
+  }
+
+  &_text {
+
+  }
+
+  &_link > a {
+    text-transform: $tt;
+    //font-weight: $titleWeight;
+    color: #f0454c;
+  }
+}
