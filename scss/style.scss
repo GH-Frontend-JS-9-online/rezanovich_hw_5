@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background-image: url('../img/bg-img.png');
   background-position: center top;
@@ -112,27 +117,81 @@ a {
 }
 
 
-.container {
-  display: flex;
-  justify-content: center;
-}
+//INFO
 
 .info_item {
   padding-left: 40px;
+  margin-top: 50px;
 
   &_title {
     text-transform: $tt;
     color: $titleColor;
     font-weight: $titleWeight;
+    font-size: 26px;
+    margin-top: 20px;
   }
 
   &_text {
-
+    color: #9aa0ab;
+    font-size: 15px;
+    margin-top: 20px;
   }
 
-  &_link > a {
-    text-transform: $tt;
-    //font-weight: $titleWeight;
-    color: #f0454c;
+  &_link {
+    margin-top: 20px;
+    >a {
+      text-transform: $tt;
+      //font-weight: $titleWeight;
+      color: #f0454c;
+      font-size: 14px;
+    }
   }
 }
+
+//Portfolio
+
+.portfolio {
+  margin-top: 50px;
+
+  &_item {
+
+
+    &_title {
+      text-transform: $tt;
+      color: $titleColor;
+      font-weight: $titleWeight;
+      font-size: 40px;
+      margin-top: 60px;
+    }
+
+    &_subtitle {
+      color: $titleColor;
+      font-size: 16px;
+      margin-top: 5px;
+
+    }
+
+    &_text {
+      color: #9aa0ab;
+      font-size: 15px;
+      margin-top: 20px;
+
+      p {
+        margin-top: 20px;
+      }
+    }
+
+    &_link {
+      margin-top: 30px;
+
+      a {
+        text-transform: $tt;
+        color: #f0454c;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//OUR TEAM
+
