@@ -195,3 +195,98 @@ a {
 
 //OUR TEAM
 
+.team {
+  border-bottom: 1px solid #e6eaed;
+}
+
+.container_team {
+
+
+}
+
+.team_block_first {
+  h3 {
+    text-transform: $tt;
+    color: $titleColor;
+    font-weight: $titleWeight;
+    font-size: 32px;
+  }
+
+  p {
+    color: #9aa0ab;
+    font-size: 15px;
+  }
+}
+
+.team_block_second {
+  display: flex;
+  justify-content: center;
+
+  .team_item {
+    display: flex;
+
+    &_photo {
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+
+    &_info {
+
+
+      &_title {
+        text-transform: $tt;
+        color: $titleColor;
+        font-weight: $titleWeight;
+        font-size: 22px;
+      }
+
+      &_subtitle {
+        color: #f0454c;
+        font-weight: $titleWeight;
+        font-size: 14px;
+      }
+
+      &_text {
+        color: #9aa0ab;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.team_block_link {
+
+  padding-bottom: 50px;
+  padding-top: 50px;
+    a {
+      text-transform: $tt;
+      color: #f0454c;
+      font-size: 14px;
+
+    }
+}
+
+//FOOTER
+
+.footer {
+
+}
+.container_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_icon {
+  margin: 35px 0 35px 0;
+
+    img {
+      margin-left: 15px;
+    }
+  }
+
+.footer_copyrights {
+  color: #9aa0ab;
+  font-size: 13px;
+}
